@@ -1,0 +1,49 @@
+.cachoeira {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #87CEEB; /* céu azul */
+  }
+  
+  .agua {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #45A0E6; /* água cristalina */
+    border-radius: 50% 50% 0 0;
+    animation: agua 2s infinite;
+  }
+  
+  .rochas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #777; /* rochas escuras */
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .vegetacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #3E8E41; /* vegetação verde */
+    border-radius: 0 0 50% 50%;
+  }
+  
+  @keyframes agua {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
